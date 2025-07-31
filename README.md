@@ -21,6 +21,7 @@ This repository contains a working **EFI** configuration for running **macOS Son
 ## ⚠️ What Does NOT Work
 
 * Microphone (currently not functional)
+* CPU frequency and temperature monitoring, fan speed control (unsupported: **AMDRyzenCPUPowerManagement** and **SMCProcessorAMD** should not be used as they cause major performance and efficiency problems)
 
 ---
 
@@ -63,7 +64,7 @@ In OpenCore's `config.plist`, set `SecureBootModel` to `Disabled` (`Misc -> Secu
 ## 🚀 Installation
 
 1. Boot from the prepared USB drive and install macOS Sonoma.
-2. After installation, mount the EFI volume on the internal macOS drive and copy over the `EFI` folder.
+2. After installation, mount the EFI volume on the internal macOS drive and copy over the **EFI** folder.
 3. If you wish, set `SecureBootModel` back to `Default` in `config.plist`.
 4. Reboot and use macOS Sonoma.
 
